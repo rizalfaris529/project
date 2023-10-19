@@ -25,15 +25,15 @@ const Homescreen = () => {
                 {
                     data && data.map((item,index) => {
                         return(
-                        <div key={index}>
+                        <div className="awal" key={index}>
                             <div style={{alignItems:"center",textAlign:"center"}}>
                             <img style={{width:"10vw",height:'7.5vw',objectFit:"cover"}} src={item.thumbnail} alt="" />
-                            <p>{item.title}</p>
+                            <p style={{fontWeight:"bold"}}>{item.title}</p>
+                            </div>
                             
                             <div style={{display:"flex",gap:'10px',justifyContent:"center"}}>
-                            <p>{item.price}</p>
-                            <p>{item.rating}</p>
-                            </div>
+                            <p style={{fontWeight:"bold",color:'brown'}}>Rp. {item.price}0.000</p>
+                            <img style={{width:'2vw',height:'3vw',marginLeft:'-5px'}} src="https://img.freepik.com/free-vector/start_53876-25533.jpg" alt="" /><p style={{marginLeft:'-15px'}}>{item.rating}</p>
 
                             </div>
                         </div>
