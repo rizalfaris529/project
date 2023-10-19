@@ -29,6 +29,12 @@ const Homescreen = () => {
                             <div style={{alignItems:"center",textAlign:"center"}}>
                             <img style={{width:"10vw",height:'7.5vw',objectFit:"cover"}} src={item.thumbnail} alt="" />
                             <p>{item.title}</p>
+                            
+                            <div style={{display:"flex",gap:'10px',justifyContent:"center"}}>
+                            <p>{item.price}</p>
+                            <p>{item.rating}</p>
+                            </div>
+
                             </div>
                         </div>
                         )
